@@ -1,50 +1,55 @@
 <!DOCTYPE html>
-<html lang="en">
+
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+	<link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <div>
-
-        <h1>Job App Form</h1>
-
-        <form>
-            <label for="name">Name:</label>
-            <input type="text" id="#name" name="name" required>
-            <br>
-            <br>
-            <label for="email">Email:</label>
-            <input type="email" id="#email" name="email" required>
-            <br>
-            <br>
-            <label for="Gender">Male</label>
-            <input type="radio" id="#gender" name="Gender">
-            <label for="Gender">Female</label>
-            <input type="radio" id="#gender" name="Gender">
-            <br>
-            <br>
-            <select name="laptop" id="laptop" required>
-                <option value="Apple">Apple</option>
-                <option value="Asus">Asus</option>
-                <option value="HP">HP</option>
-            <br>
-            <br>
-            <label for="Age">Age</label>
-            <input type="text" id="#age" name="age" required>
-            <br>
-            <br>
-            <label for="dob">DOB</label>
-            <input type="text" id="#dob" name="dob" required>
-            <br>
-            <br>
-            <input type="submit" value="Submit">
-        </form>
-    </div>
+	<!-- the entire body must be written by student -->
+	<form method = "post">
+		<label for="name">Name :</label>
+		<input id="name" type="Name" placeholder="Name" required/>
+		<br/>
+		<br/>
+		<label for="email">Email :</label>
+		<input id="email" type="Email" placeholder="Email" required/>
+		<br/>
+		<br/>
+		<label for="gender">Gender :</label>
+		<input name="gender" type="radio" required>Male</input>
+		<input name="gender" type="radio" required>Female</input>
+		<br/>
+		<br/>
+		<label for="laptop">Laptop Brands :</label>
+		<select id="laptop" name="Laptop-brands">
+			<option value="apple">Apple</option>
+			<option value="asus">Asus</option>
+			<option value="HP">HP</option>
+		</select>
+		<br/>
+		<br/>
+		<label for="age" >Age :</label>
+		<input id="age" type="Age" placeholder="Age" required/>
+		<br/>
+		<br/>
+		<label for="dob" >DOB :</label>
+		<input id="dob" type="date" required/>
+		<br/>
+		<br/>
+		<label for="password">Password :</label>
+		<input id="password" type="password" placeholder="Password" required/>
+		<br/>
+		<br/>
+		<label for="portfolio">Portfolio :</label>
+		<input id="portfolio" type="Url" placeholder="Portfolio"/></input>
+		<br/>
+		<br/>
+		<button type="submit">Submit</button>
+	</form>
+    <script type="text/javascript" src="./script.js">
+</script>
 
 </body>
 
